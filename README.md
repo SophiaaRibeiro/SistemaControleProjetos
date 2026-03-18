@@ -2,8 +2,6 @@
 
 ## 📌 Sobre o Projeto
 
-🚧 Projeto em desenvolvimento
-
 O **Sistema de Controle de Projetos** é uma aplicação web desenvolvida com o objetivo de organizar, planejar e acompanhar projetos e tarefas de forma simples e eficiente.
 
 O sistema permite criar projetos, gerenciar tarefas, acompanhar prazos e visualizar o progresso das atividades, facilitando a organização do trabalho e a gestão de demandas.

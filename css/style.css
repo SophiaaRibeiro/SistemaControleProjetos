@@ -1,5 +1,263 @@
+
+
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: "Segoe UI", sans-serif;
+}
+
+body{
+background:#dcdcdc;
+font-family: 'Poppins', sans-serif;
+}
+
+/* AUTH SPLIT SCREEN */
+
+.auth-layout{
+display:flex;
+height:100vh;
+}
+
+.auth-left{
+flex:1;
+background:linear-gradient(135deg,#1f2a7a,#8fa0d9);
+color:white;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+padding:40px;
+text-align:center;
+}
+
+.auth-left h1{
+font-size:32px;
+margin-bottom:10px;
+}
+
+.auth-left p{
+max-width:300px;
+opacity:0.9;
+}
+
+.auth-right{
+flex:1;
+background:white;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.auth-form{
+width:320px;
+}
+
+.auth-form h2{
+margin-bottom:10px;
+}
+
+.auth-form p{
+font-size:14px;
+color:#666;
+margin-bottom:20px;
+}
+
+.auth-form input{
+width:100%;
+padding:10px;
+margin-bottom:12px;
+border-radius:8px;
+border:1px solid #ccc;
+}
+
+.auth-form button{
+width:100%;
+padding:10px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+margin-top:5px;
+}
+
+.auth-form a{
+font-size:13px;
+color:#3d4be0;
+text-decoration:none;
+}
+
+/* LAYOUT SISTEMA */
+
+.layout{
+display:flex;
+height:100vh;
+}
+
+.sidebar{
+width:200px;
+background:#e5e5e5;
+padding:20px;
+}
+
+.sidebar .user{
+text-align:center;
+margin-bottom:30px;
+}
+
+.avatar{
+width:60px;
+height:60px;
+background:#ccc;
+border-radius:50%;
+margin:auto;
+margin-bottom:10px;
+}
+
+.sidebar a{
+display:block;
+padding:10px;
+text-decoration:none;
+color:#333;
+margin:5px 0;
+}
+
+.sidebar a.active{
+background:white;
+border-radius:6px;
+}
+
+.main{
+flex:1;
+}
+
+.topbar{
+height:60px;
+background:#3e4a63;
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:0 20px;
+color:white;
+}
+
+.content{
+padding:30px;
+}
+
+/* KANBAN */
+
+.kanban{
+display:flex;
+gap:20px;
+}
+
+.column{
+background:white;
+border-radius:10px;
+width:220px;
+padding:10px;
+}
+
+.column h3{
+text-align:center;
+margin-bottom:10px;
+padding:5px;
+border-radius:6px;
+color:white;
+}
+
+.pendente{background:#e74c3c;}
+.andamento{background:#3b82f6;}
+.revisao{background:#a855f7;}
+.concluido{background:#22c55e;}
+
+.task{
+background:#eee;
+padding:10px;
+border-radius:8px;
+margin-bottom:10px;
+}
+
+/* FORM */
+
+.form-box{
+background:#6f6f6f;
+padding:20px;
+width:300px;
+border-radius:10px;
+color:white;
+}
+
+.form-box input,
+.form-box select{
+width:100%;
+padding:8px;
+margin:8px 0;
+border-radius:6px;
+border:none;
+}
+
+.form-box button{
+padding:8px;
+border:none;
+border-radius:6px;
+margin-top:10px;
+cursor:pointer;
+}
+/* BARRA DE PRAZOS */
+
+.prazo-bar{
+background:#3e4a63;
+padding:10px 20px;
+display:flex;
+align-items:center;
+gap:10px;
+}
+
+.filtro-btn{
+padding:6px 16px;
+border-radius:20px;
+border:none;
+cursor:pointer;
+background:transparent;
+color:white;
+border:1px solid white;
+}
+
+.filtro-btn:hover{
+background:white;
+color:#3e4a63;
+}
+
+.filtro-btn.active{
+background:white;
+color:#3e4a63;
+}
+
+.finalizado{
+background:#22c55e;
+color:white;
+border:none;
+}
+
+/* LISTA PRAZOS */
+
+.lista-prazos{
+margin-top:20px;
+background:white;
+border-radius:10px;
+padding:20px;
+min-height:250px;
+}
+
+.prazo-item{
+padding:12px;
+border-bottom:1px solid #ddd;
+display:flex;
+justify-content:space-between;
+}
+
+.prazo-item.atrasado{
+color:#e74c3c;
+font-weight:500;
 }
