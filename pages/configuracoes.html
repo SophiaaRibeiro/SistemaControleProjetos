@@ -1,142 +1,96 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<title>Configurações</title>
-
-<link rel="stylesheet" href="../css/style.css">
-
+    <title>Projetos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="layout">
 
-<div class="sidebar">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
 
-<div class="user">
-<div class="avatar"></div>
-<p>Usuário</p>
-</div>
+        <div class="logo">
+            <div class="logo-box">CP</div>
+            <div>
+                <strong>Control</strong><br>
+                <span>Projects</span>
+            </div>
+        </div>
 
-<a href="projetos.html">Projetos</a>
-<a href="kanban.html">Tarefas</a>
-<a href="dashboard.html">Dashboard</a>
-<a href="prazo.html">Prazos</a>
-<a class="active" href="configuracoes.html">Configurações</a>
+        <nav>
+            <a href="projetos.html">
+                <i class="fa-solid fa-folder"></i>
+                <span>Projetos</span>
+            </a>
 
-</div>
+            <a href="tarefas.html">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Tarefas</span>
+            </a>
 
-<div class="main">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
 
-<div class="topbar">
-<h2>Configurações</h2>
-</div>
+            <a href="prazo.html">
+                <i class="fa-solid fa-clock"></i>
+                <span>Prazos</span>
+            </a>
 
-<div class="content" style="display:flex; gap:30px; flex-wrap:wrap;">
+            <a href="kanban.html">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Kanban</span>
+            </a>
 
-<!-- DADOS -->
+            <a class="active" href="configuracoes.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Configurações</span>
+            </a>
+        </nav>
 
-<div class="form-box">
+        <div class="user-box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <p>Sophia</p>
+                <small>Online</small>
+            </div>
+        </div>
 
-<h3>Perfil</h3>
+    </div>
 
-<input type="text" placeholder="Nome">
+    <!-- MAIN -->
+    <div class="main">
 
-<input type="email" placeholder="Email">
+        <div class="topbar">
 
-<button>Salvar</button>
+            <div class="top-left">
+                <h2>Configurações</h2>
+                
+            </div>
 
-</div>
+            <div class="top-right">
 
-<!-- SENHA -->
+                
 
-<div class="form-box">
+            </div>
+        </div>
 
-<h3>Alterar Senha</h3>
+        <!-- CONTENT -->
+        <div class="content">             
 
-<input type="password" placeholder="Senha atual">
+          
 
-<input type="password" placeholder="Nova senha">
+        </div>
 
-<input type="password" placeholder="Confirmar senha">
-
-<button>Atualizar</button>
-
-</div>
-
-<!-- NOTIFICAÇÕES -->
-
-<div class="form-box">
-
-<h3>Notificações</h3>
-
-<label>
-<input type="checkbox"> Receber alertas de prazo
-</label>
-
-<br>
-
-<label>
-<input type="checkbox"> Receber email de tarefas
-</label>
-
-<br><br>
-
-<button>Salvar</button>
-
-</div>
-
-<!-- TEMA -->
-
-<div class="form-box">
-
-<h3>Tema</h3>
-
-<select>
-
-<option>Claro</option>
-<option>Escuro</option>
-
-</select>
-
-<button>Aplicar</button>
+    </div>
 
 </div>
 
-<!-- EXCLUIR -->
-
-<div class="form-box">
-
-<h3>Conta</h3>
-
-<p>Excluir sua conta permanentemente</p>
-
-<button style="background:#e74c3c;color:white;">
-Excluir conta
-</button>
-
-<h3>Sessão</h3>
-
-<p>Sair da sua conta no sistema</p>
-
-<button class="btn-primary"
-onclick="logout()">
-
-Logout
-
-</button>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-<script src="../js/projetos.js"></script>
 </body>
-
 </html>

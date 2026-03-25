@@ -1,86 +1,205 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<title>Projetos</title>
-
-<link rel="stylesheet" href="../css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-
+    <title>Projetos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
 </head>
 
 <body>
 
 <div class="layout">
 
-<!-- SIDEBAR -->
+    <!-- SIDEBAR -->
+    <div class="sidebar">
 
-<div class="sidebar">
+        <div class="logo">
+            <div class="logo-box">CP</div>
+            <div>
+                <strong>Control</strong><br>
+                <span>Projects</span>
+            </div>
+        </div>
 
-<div class="user">
-<div class="avatar"></div>
-<p>Usuário</p>
+        <nav>
+            <a class="active" href="#">
+                <i class="fa-solid fa-folder"></i>
+                <span>Projetos</span>
+            </a>
+
+            <a href="tarefas.html">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Tarefas</span>
+            </a>
+
+            <a href="dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
+
+            <a href="prazo.html">
+                <i class="fa-solid fa-clock"></i>
+                <span>Prazos</span>
+            </a>
+
+            <a href="kanban.html">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Kanban</span>
+            </a>
+
+            <a href="configuracoes.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Configurações</span>
+            </a>
+        </nav>
+
+        <div class="user-box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <p>Sophia</p>
+                <small>Online</small>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- MAIN -->
+    <div class="main">
+
+        <div class="topbar">
+
+            <div class="top-left">
+                <h2>Projetos</h2>
+                <p>Gerencie seus projetos com eficiência</p>
+            </div>
+
+            <div class="top-right">
+
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" placeholder="Buscar...">
+                </div>
+
+                <button class="btn-primary" onclick="abrirModal()">
+                    <i class="fa-solid fa-plus"></i>
+                    Novo Projeto
+                </button>
+
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">
+
+            <input class="search" placeholder="Buscar projetos...">     
+             
+            <select id="filtroStatus" onchange="filtrarProjetos()" class="search">
+                <option value="">Todos</option>
+                <option value="andamento">Em andamento</option>
+                <option value="planejamento">Planejamento</option>
+                <option value="concluido">Concluído</option>
+            </select>
+
+            <div class="project-grid">       
+
+                <div class="project-card">
+
+                    <div class="card-header">
+                        <h3>Sistema Financeiro</h3>
+                        <span class="status andamento">Em andamento</span>
+                    </div>
+
+                    <p class="desc">Sistema para controle financeiro empresarial</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width:70%"></div>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>70% concluído</span>
+                        <button>Abrir</button>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="card-header">
+                        <h3>App Delivery</h3>
+                        <span class="status planejamento">Planejamento</span>
+                    </div>
+
+                    <p class="desc">Aplicativo mobile de pedidos</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width:30%"></div>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>30% concluído</span>
+                        <button>Abrir</button>
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="card-header">
+                        <h3>Site Institucional</h3>
+                        <span class="status concluido">Concluído</span>
+                    </div>
+
+                    <p class="desc">Landing page da empresa</p>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width:100%"></div>
+                    </div>
+
+                    <div class="card-footer">
+                        <span>100% concluído</span>
+                        <button>Abrir</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
 </div>
 
-<a class="active" href="../pages/projetos.html">Projetos</a>
-<a href="../pages/tarefas.html">Tarefas</a>
-<a href="../pages/dashboard.html">Dashboard</a>
-<a href="../pages/prazo.html">Prazos</a>
-<a href="../pages/kanban.html">Kanban</a>
-<a href="../pages/configuracoes.html">Configurações</a>
+
+<div id="modalProjeto" class="modal">
+
+    <div class="modal-content">
+
+        <h3>Novo Projeto</h3>
+
+        <input id="nomeProjeto" placeholder="Nome do projeto">
+        
+        <select id="statusProjeto">
+            <option value="andamento">Em andamento</option>
+            <option value="planejamento">Planejamento</option>
+            <option value="concluido">Concluído</option>
+        </select>
+
+        <input id="descricaoProjeto" placeholder="Descrição">
+
+        <input id="progressoProjeto" type="number" placeholder="Progresso (%)">
+
+        <div class="modal-actions">
+            <button onclick="fecharModal()">Cancelar</button>
+            <button class="btn-primary" onclick="salvarProjeto()">Salvar</button>
+        </div>
+
+    </div>
 
 </div>
-
-<!-- MAIN -->
-
-<div class="main">
-
-<div class="topbar">
-<h2> Controle de Projetos</h2>
-<button class="btn-primary">+ Novo Projeto</button>
-</div>
-
-<div class="content">
-
-<div style="display:flex; gap:20px; flex-wrap:wrap;">
-
-<div class="form-box">
-<h4>Projeto Sistema X</h4>
-
-<p>Status: Em andamento</p>
-<p>Prioridade: Alta</p>
-
-<button class="btn-primary">Abrir</button>
-</div>
-
-<div class="form-box">
-<h4>Projeto App Y</h4>
-
-<p>Status: Planejamento</p>
-<p>Prioridade: Média</p>
-
-<button class="btn-primary">Abrir</button>
-</div>
-
-<div class="form-box">
-<h4>Projeto Sistema W</h4>
-
-<p>Status: Concluído</p>
-<p>Prioridade: Baixa</p>
-
-<button class="btn-primary">Abrir</button>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
+<script src="../js/projetos.js"></script>
 </body>
 
 </html>

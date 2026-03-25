@@ -1,58 +1,94 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="../css/style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<title>Kanban</title>
+    <title>Projetos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="layout">
 
-<div class="sidebar">
+    <!-- SIDEBAR -->
+    <div class="sidebar">
 
-<div class="user">
-<div class="avatar"></div>
-<p>Usuário</p>
-</div>
+        <div class="logo">
+            <div class="logo-box">CP</div>
+            <div>
+                <strong>Control</strong><br>
+                <span>Projects</span>
+            </div>
+        </div>
 
-<a href="../pages/projetos.html">Projetos</a>
-<a href="../pages/tarefas.html">Tarefas</a>
-<a href="../pages/dashboard.html">Dashboard</a>
-<a href="../pages/prazo.html">Prazos</a>
-<a class="active" href="../pages/kanban.html">Kanban</a>
-<a href="../pages/configuracoes.html">Configurações</a>
+        <nav>
+            <a href="projetos.html">
+                <i class="fa-solid fa-folder"></i>
+                <span>Projetos</span>
+            </a>
 
-</div>
+            <a href="tarefas.html">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Tarefas</span>
+            </a>
 
-<div class="main">
+            <a href="dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
 
-<div class="topbar">
-<h2>Painel Kanban</h2>
-</div>
+            <a href="prazo.html">
+                <i class="fa-solid fa-clock"></i>
+                <span>Prazos</span>
+            </a>
 
-<div class="content">
+            <a   class="active" href="kanban.html">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Kanban</span>
+            </a>
 
-<div class="form-box">
+            <a href="configuracoes.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Configurações</span>
+            </a>
+        </nav>
 
-<h3>Nova Tarefa</h3>
+        <div class="user-box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <p>Sophia</p>
+                <small>Online</small>
+            </div>
+        </div>
 
-<input type="text" placeholder="Título">
+    </div>
 
-<select>
-<option>Pendente</option>
-<option>Em andamento</option>
-<option>Em revisão</option>
-</select>
+    <!-- MAIN -->
+    <div class="main">
 
-<button>Criar</button>
+        <div class="topbar">
 
-</div>
+            <div class="top-left">
+                <h2>Kanban</h2>
+                
+            </div>
 
-</div>
+            <div class="top-right">
 
-</div>
+                
+
+            </div>
+        </div>
+
+        <!-- CONTENT -->
+        <div class="content">             
+
+          
+
+        </div>
+
+    </div>
 
 </div>
 

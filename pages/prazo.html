@@ -1,95 +1,96 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-
-<title>Prazos</title>
-
-<link rel="stylesheet" href="../css/style.css">
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <title>Projetos</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
 <div class="layout">
 
-<!-- SIDEBAR -->
+    <!-- SIDEBAR -->
+    <div class="sidebar">
 
-<div class="sidebar">
+        <div class="logo">
+            <div class="logo-box">CP</div>
+            <div>
+                <strong>Control</strong><br>
+                <span>Projects</span>
+            </div>
+        </div>
 
-<div class="user">
-<div class="avatar"></div>
-<p>Usuário</p>
-</div>
+        <nav>
+            <a href="projetos.html">
+                <i class="fa-solid fa-folder"></i>
+                <span>Projetos</span>
+            </a>
 
+            <a href="tarefas.html">
+                <i class="fa-solid fa-list-check"></i>
+                <span>Tarefas</span>
+            </a>
 
-<a href="../pages/projetos.html">Projetos</a>
-<a href="../pages/tarefas.html">Tarefas</a>
-<a href="../pages/dashboard.html">Dashboard</a>
-<a class="active" href="../pages/prazo.html">Prazos</a>
-<a href="../pages/kanban.html">Kanban</a>
-<a href="../pages/configuracoes.html">Configurações</a>
+            <a href="dashboard.html">
+                <i class="fa-solid fa-chart-line"></i>
+                <span>Dashboard</span>
+            </a>
 
-</div>
+            <a  class="active" href="prazo.html">
+                <i class="fa-solid fa-clock"></i>
+                <span>Prazos</span>
+            </a>
 
-<!-- MAIN -->
+            <a href="kanban.html">
+                <i class="fa-solid fa-table-columns"></i>
+                <span>Kanban</span>
+            </a>
 
-<div class="main">
+            <a href="configuracoes.html">
+                <i class="fa-solid fa-gear"></i>
+                <span>Configurações</span>
+            </a>
+        </nav>
 
-<div class="topbar">
-<h2>Controle de Prazos</h2>
-</div>
+        <div class="user-box">
+            <i class="fa-solid fa-user"></i>
+            <div>
+                <p>Sophia</p>
+                <small>Online</small>
+            </div>
+        </div>
 
-<!-- BARRA DE FILTROS -->
+    </div>
 
-<div class="prazo-bar">
+    <!-- MAIN -->
+    <div class="main">
 
-<button class="filtro-btn active">Hoje</button>
+        <div class="topbar">
 
-<button class="filtro-btn">Essa Semana</button>
+            <div class="top-left">
+                <h2>Prazo</h2>
+                
+            </div>
 
-<button class="filtro-btn">Atrasadas</button>
+            <div class="top-right">
 
-<button class="filtro-btn finalizado">Finalizadas</button>
+                
 
-</div>
+            </div>
+        </div>
 
-<!-- LISTA -->
+        <!-- CONTENT -->
+        <div class="content">             
 
-<div class="content">
+          
 
-<div class="lista-prazos">
+        </div>
 
-<div class="prazo-item">
-<span>Finalizar tela de login</span>
-<span>Hoje</span>
-</div>
-
-<div class="prazo-item">
-<span>Criar API de projetos</span>
-<span>2 dias</span>
-</div>
-
-<div class="prazo-item atrasado">
-<span>Revisar layout do dashboard</span>
-<span>Atrasado</span>
-</div>
-
-<div class="prazo-item">
-<span>Implementar Kanban</span>
-<span>5 dias</span>
-</div>
-
-</div>
-
-</div>
-
-</div>
+    </div>
 
 </div>
 
 </body>
-
 </html>
