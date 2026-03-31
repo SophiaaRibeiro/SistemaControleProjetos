@@ -59,8 +59,9 @@ Criar uma aplicação que permita:
 * HTML
 * CSS
 * JavaScript
-* PHP
-* MySQL
+* React
+* C#
+* SQL Server
 * Git e GitHub
 
 ## 🚀 Melhorias Futuras
